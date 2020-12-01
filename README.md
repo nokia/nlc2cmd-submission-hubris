@@ -15,7 +15,7 @@ pip install -r requirements.txt
 
 If you just want to run inference, you only really need to install `pytorch` and `transformers`.
 
-Install the bash lexer.
+If you want to train the models from scratch, you'll also need to download the datasets, as these are not included in the repo. You might want to check the data-preprocessing notebook, which has the sources of all data, plus the code to preprocess it. 
 
 # Usage
 
@@ -32,6 +32,7 @@ To run the experiments defined in `src/tune.py`:
 ```
 python train.py
 ```
+You can change the hyperparameters in the `src/tune.py`. Using the current ones, you'll train the same gpt2-large model that was used in the competition. Refer to `src/config.py` for an explanation on the meaning of the different hyperparameters. In the notebooks, you can find some graphs on these used for tuning.
 
 # Web app
 The code comes with a basic flask app to demo the model. You can start it with:
