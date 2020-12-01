@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<section class="section">
+    <h2 class="title">
+        Convert to bash
+    </h2>
+    <form action="" method="post" novalidate>
+        {{ form.hidden_tag() }}
+        <div class="field has-addons">
+            <div class="control">{{ form.searchbox(size=50, class_="input is-link is-focused") }}</div>
+            <div class="control">{{ form.submit(class_="button is-link is-info") }}</div>
+        </div>
+        
+    </form>
+</section>
+
+{% if results %}
+<section class="section">
+    <h2 class="title">Results</h2>
+    <table>
+        <tr>
+            <th>Our Model </th>
+            <th>
+                <code>
+                    {{ results[0] }}
+                </code>
+            </th>
+        </tr>
+        <tr>
+            <th>Tellina </th>
+            <th>
+                <code>
+                    {{ results[1] }}
+                </code>
+            </th>
+        </tr>
+    </table>
+{% endif %}
+</section>
+{% endblock %}

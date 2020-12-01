@@ -1,0 +1,14 @@
+torch
+numpy
+transformers==3.0.2
+nltk
+tqdm
+onnx
+onnxruntime
+onnxruntime_tools
+pathlib
+flask
+flask-wtf
+flask-environments
+python-dotenvs
+bs4
