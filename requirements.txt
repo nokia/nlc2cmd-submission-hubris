@@ -1,6 +1,6 @@
 torch
 numpy
-transformers==3.0.2
+transformers==4.1.1
 nltk
 tqdm
 onnx

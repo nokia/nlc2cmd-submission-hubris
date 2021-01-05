@@ -178,7 +178,7 @@ def main():
         print("-- Starting prediction")
         print("invocation:")
         print(f"\t\t{invocation}")
-        predictions, confidences = predict_full(invocations, model1, model2, tokenizer1, tokenizer2)
+        predictions, confidences = predict_full(invocation, model1, model2, tokenizer1, tokenizer2)
         print("results:")
         for p in predictions:
             print(f"\t\t{p}")
